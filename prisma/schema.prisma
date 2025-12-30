@@ -1,0 +1,79 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Property {
+  id           String   @id @default(uuid())
+  status       String
+  address      Json
+  houseSize    Int
+  erfSize      Int
+  bedrooms     Int
+  bathrooms    Int
+  garages      Int
+  parkingBays  Int
+  rates        Int
+  levies       Int
+  askingPrice  Int
+  features     Json
+  headline     String
+  tagline      String
+  description  String
+  lifestyleBlurb String
+  investorBlurb  String
+  images       String[]
+  virtualTourUrl String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Buyer {
+  id           String   @id @default(uuid())
+  name         String
+  email        String?
+  phone        String?
+  country      String
+  source       String
+  stage        String
+  budget       Int?
+  currency     String?
+  timeline     String?
+  notes        String
+  documentsShared String[]
+  lastContact  DateTime?
+  createdAt    DateTime @default(now())
+}
+
+model LegalItem {
+  id           String   @id @default(uuid())
+  category     String
+  item         String
+  status       String
+  notes        String?
+  dueDate      DateTime?
+  documentUrl  String?
+}
+
+model MarketingChannel {
+  id           String   @id @default(uuid())
+  category     String
+  name         String
+  url          String?
+  status       String
+  targetMarket String[]
+  notes        String?
+  publishedDate DateTime?
+}
+
+model Financials {
+  id           String   @id @default(uuid())
+  askingPrice  Int
+  currency     String
+  costs        Json
+  exchangeRates Json
+}

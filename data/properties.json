@@ -1,0 +1,46 @@
+[
+  {
+    "id": "albertinia-aloe-park-001",
+    "status": "active",
+    "address": {
+      "street": "Aloe Park Estate",
+      "estate": "Aloe Park",
+      "suburb": "",
+      "town": "Albertinia",
+      "province": "Western Cape",
+      "region": "Garden Route",
+      "country": "South Africa"
+    },
+    "houseSize": 235,
+    "erfSize": 448,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "garages": 2,
+    "parkingBays": 2,
+    "rates": 725.81,
+    "levies": 0,
+    "askingPrice": 3200000,
+    "features": [
+      {
+        "category": "Interior Finishes",
+        "items": [
+          "SPC Rigid Core Luxury Vinyl flooring throughout",
+          "2-tone shaker-style kitchen with island",
+          "Geberit toilets in all bathrooms",
+          "High-end bathroom finishes",
+          "Inside fireplace heating ±80 sqm",
+          "Double roof insulation (270mm, R-value 6.28)"
+        ]
+      }
+    ],
+    "headline": "Aloe Park Family Home",
+    "tagline": "Spacious, modern, and energy-efficient",
+    "description": "A beautiful family home in Aloe Park, Albertinia.",
+    "lifestyleBlurb": "Enjoy the Garden Route lifestyle.",
+    "investorBlurb": "Great investment opportunity.",
+    "images": ["https://res.cloudinary.com/demo/image/upload/sample.jpg"],
+    "virtualTourUrl": "",
+    "createdAt": "2025-12-30T00:00:00Z",
+    "updatedAt": "2025-12-30T00:00:00Z"
+  }
+]

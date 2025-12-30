@@ -1,0 +1,20 @@
+{
+  "askingPrice": 3200000,
+  "currency": "ZAR",
+  "costs": [
+    { "id": "conveyancer", "item": "Conveyancer Fees", "amount": 25000, "status": "estimated", "notes": "Seller's conveyancer for bond cancellation" },
+    { "id": "bond-cancellation", "item": "Bond Cancellation Fees", "amount": 5000, "status": "estimated", "notes": "If applicable" },
+    { "id": "compliance-electrical", "item": "Electrical CoC", "amount": 2500, "status": "estimated", "notes": "May be less if no issues" },
+    { "id": "compliance-gas", "item": "Gas CoC", "amount": 1500, "status": "estimated", "notes": "" },
+    { "id": "compliance-beetle", "item": "Beetle Certificate", "amount": 1000, "status": "estimated", "notes": "" },
+    { "id": "agent-commission", "item": "Agent Commission (if used)", "amount": 0, "status": "estimated", "notes": "Private sale - no commission" },
+    { "id": "moving", "item": "Moving Costs", "amount": 15000, "status": "estimated", "notes": "Dependent on destination" }
+  ],
+  "exchangeRates": [
+    { "currency": "GBP", "rate": 0.043, "updatedAt": "2025-01-01" },
+    { "currency": "EUR", "rate": 0.051, "updatedAt": "2025-01-01" },
+    { "currency": "USD", "rate": 0.055, "updatedAt": "2025-01-01" },
+    { "currency": "CHF", "rate": 0.049, "updatedAt": "2025-01-01" },
+    { "currency": "AED", "rate": 0.20, "updatedAt": "2025-01-01" }
+  ]
+}

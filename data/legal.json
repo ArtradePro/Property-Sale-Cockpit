@@ -1,0 +1,17 @@
+{
+  "items": [
+    { "id": "title-deed", "category": "Ownership Documents", "item": "Title Deed", "status": "pending", "notes": "Request from Deeds Office or previous conveyancer" },
+    { "id": "bond-status", "category": "Ownership Documents", "item": "Bond Cancellation / Paid-up Letter", "status": "pending", "notes": "Required if property is bonded" },
+    { "id": "building-plans", "category": "Ownership Documents", "item": "Approved Building Plans", "status": "pending", "notes": "Obtain from municipality or original architect" },
+    { "id": "rates-clearance", "category": "Municipal", "item": "Rates Clearance Certificate", "status": "pending", "notes": "Obtained during transfer process" },
+    { "id": "levy-clearance", "category": "Estate", "item": "Levy Clearance (if applicable)", "status": "not-required", "notes": "Check with estate management" },
+    { "id": "electrical-coc", "category": "Compliance Certificates", "item": "Electrical Certificate of Compliance", "status": "pending", "notes": "Valid electrician required" },
+    { "id": "gas-coc", "category": "Compliance Certificates", "item": "Gas Certificate of Compliance", "status": "pending", "notes": "Required for gas braai installation" },
+    { "id": "plumbing-coc", "category": "Compliance Certificates", "item": "Plumbing Certificate of Compliance", "status": "pending", "notes": "May be required depending on province" },
+    { "id": "beetle-cert", "category": "Compliance Certificates", "item": "Beetle Certificate", "status": "pending", "notes": "Required for coastal areas" },
+    { "id": "electric-fence", "category": "Compliance Certificates", "item": "Electric Fence Certificate", "status": "not-required", "notes": "Only if electric fence installed" },
+    { "id": "conveyancer", "category": "Professional Services", "item": "Conveyancer Selected", "status": "pending", "notes": "Get quotes from 2-3 conveyancers" },
+    { "id": "estate-rules", "category": "Estate", "item": "Estate Rules Document", "status": "pending", "notes": "For buyer information pack" },
+    { "id": "body-corporate", "category": "Estate", "item": "Body Corporate / HOA Details", "status": "pending", "notes": "Contact details and meeting minutes" }
+  ]
+}

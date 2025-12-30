@@ -1,0 +1,19 @@
+{
+  "targetMarkets": [
+    { "country": "South Africa", "priority": "high" },
+    { "country": "United Kingdom", "priority": "high" },
+    { "country": "Germany", "priority": "medium" },
+    { "country": "Netherlands", "priority": "medium" },
+    { "country": "United States", "priority": "medium" },
+    { "country": "United Arab Emirates", "priority": "low" }
+  ],
+  "channels": [
+    { "id": "property24", "category": "portal", "name": "Property24", "url": "https://property24.com", "status": "not-started", "targetMarket": ["South Africa", "International"], "notes": "Primary local portal, visible internationally" },
+    { "id": "private-property", "category": "portal", "name": "Private Property", "url": "https://privateproperty.co.za", "status": "not-started", "targetMarket": ["South Africa"], "notes": "Secondary local portal" },
+    { "id": "facebook-groups", "category": "social", "name": "Facebook Groups", "url": "", "status": "not-started", "targetMarket": ["United Kingdom", "South Africa"], "notes": "UK expats in SA, Garden Route groups, Brits moving to SA" },
+    { "id": "instagram", "category": "social", "name": "Instagram", "url": "", "status": "not-started", "targetMarket": ["All"], "notes": "Property photos, lifestyle content, reels" },
+    { "id": "youtube", "category": "social", "name": "YouTube Video Tour", "url": "", "status": "not-started", "targetMarket": ["All"], "notes": "Full walkthrough video for international buyers" },
+    { "id": "linkedin", "category": "social", "name": "LinkedIn", "url": "", "status": "not-started", "targetMarket": ["United Kingdom", "Germany", "Netherlands"], "notes": "Professional network, remote workers relocating" },
+    { "id": "gumtree", "category": "portal", "name": "Gumtree SA", "url": "https://gumtree.co.za", "status": "not-started", "targetMarket": ["South Africa"], "notes": "Additional local reach" }
+  ]
+}
