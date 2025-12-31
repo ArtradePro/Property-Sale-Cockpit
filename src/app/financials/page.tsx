@@ -15,11 +15,20 @@ export default function FinancialsPage() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
-    fetchExchangeRates()
-      .then(rates => setExchangeRates(rates))
-      .catch(() => setExchangeRates(financials.exchangeRates))
-      .finally(() => setLoading(false));
+    let isMounted = true;
+    const fetchRates = async () => {
+      setLoading(true);
+      try {
+        const rates = await fetchExchangeRates();
+        if (isMounted) setExchangeRates(rates);
+      } catch {
+        if (isMounted) setExchangeRates(financials.exchangeRates);
+      } finally {
+        if (isMounted) setLoading(false);
+      }
+    };
+    fetchRates();
+    return () => { isMounted = false; };
   }, [financials.exchangeRates]);
 
   function convertPriceLive(zarAmount: number) {
