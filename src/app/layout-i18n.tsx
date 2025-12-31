@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { ToastProvider } from '@/components/ui/ToastProvider';
 import { AuthProvider } from '@/app/auth/AuthProvider';
-import { Analytics } from '@vercel/analytics/react';
 import { I18nProvider } from '@/app/i18n/I18nProvider';
 import enMessages from '@/messages/en.json';
 import deMessages from '@/messages/de.json';
