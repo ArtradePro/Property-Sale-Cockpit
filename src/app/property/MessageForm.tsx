@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react';
 
 export function MessageForm({ sellerEmail }: { sellerEmail: string }) {
@@ -51,7 +52,7 @@ export function MessageForm({ sellerEmail }: { sellerEmail: string }) {
       />
       <button
         type="submit"
-        className="w-full sm:w-auto px-4 py-2 bg-blue-600 text-white rounded focus:outline focus:outline-2 focus:outline-blue-600 active:bg-blue-700"
+        className="w-full sm:w-auto px-4 py-2 bg-blue-600 text-white rounded focus:outline-blue-600 active:bg-blue-700"
         disabled={sending}
         aria-disabled={sending}
         style={{ touchAction: 'manipulation' }}

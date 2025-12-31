@@ -1,8 +1,9 @@
+"use client";
 import { Shell } from '@/components/layout/Shell';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import { StatusBadge } from '@/components/ui/Badge';
 import { getFinancials, getProperty } from '@/lib/data';
-import { formatZAR, convertPrice, getNetProceeds } from '@/lib/currency';
+import { formatZAR, getNetProceeds } from '@/lib/currency';
 import { fetchExchangeRates } from '@/lib/exchange';
 import { useEffect, useState } from 'react';
 import { TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
@@ -19,7 +20,7 @@ export default function FinancialsPage() {
       .then(rates => setExchangeRates(rates))
       .catch(() => setExchangeRates(financials.exchangeRates))
       .finally(() => setLoading(false));
-  }, []);
+  }, [financials.exchangeRates]);
 
   function convertPriceLive(zarAmount: number) {
     const currencySymbols: Record<string, string> = {

@@ -1,9 +1,9 @@
 'use client';
 
+'use client';
 import { useState } from 'react';
 import { Shell } from '@/components/layout/Shell';
 import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
 import { CopyButton } from '@/components/ui/CopyButton';
 import { getProperty } from '@/lib/data';
 import { 
@@ -73,7 +73,7 @@ export default function ContentPage() {
           <CopyButton text={content} label="Copy All" />
         </div>
         
-        <div className="bg-gray-50 rounded-lg p-6 font-mono text-sm whitespace-pre-wrap overflow-x-auto max-h-[600px] overflow-y-auto">
+        <div className="bg-gray-50 rounded-lg p-6 font-mono text-sm whitespace-pre-wrap overflow-x-auto max-h-150 overflow-y-auto">
           {content}
         </div>
       </Card>

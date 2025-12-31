@@ -26,7 +26,7 @@ const navigation = [
 export function Sidebar() {
   const pathname = usePathname();
   return (
-    <aside className="w-full md:w-64 flex-shrink-0 bg-gray-900 min-h-0 md:min-h-screen flex flex-row md:flex-col overflow-x-auto md:overflow-visible" aria-label="Main navigation">
+    <aside className="w-full md:w-64 shrink-0 bg-gray-900 min-h-0 md:min-h-screen flex flex-row md:flex-col overflow-x-auto md:overflow-visible" aria-label="Main navigation">
       <div className="flex items-center h-14 md:h-16 px-4 md:px-6 bg-gray-800 w-full md:w-auto">
         <span className="text-lg md:text-xl font-bold text-white">Sale Cockpit</span>
       </div>

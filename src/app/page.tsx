@@ -20,6 +20,12 @@ export default function Home() {
             Looking for a starting point or more instructions? Head over to{" "}
             <a
               href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+
               // ...existing code...
-              // (The new Dashboard page code as provided in your last message)
-              Templates
+            </a>
+          </p>
+        </div>
+      </main>
+    </div>
+  );
+}

@@ -30,7 +30,7 @@ export function getBuyers(): Buyer[] {
   try {
     const parsed = JSON.parse(stored);
     return z.array(BuyerSchema).parse(parsed);
-  } catch (e) {
+  } catch {
     // If invalid, clear corrupted data
     localStorage.removeItem(BUYERS_KEY);
     return [];

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -29,13 +29,9 @@ const BuyerFormSchema = z.object({
 type BuyerFormValues = z.infer<typeof BuyerFormSchema>;
 
 export default function BuyersPage() {
-  const [buyers, setBuyers] = useState<Buyer[]>([]);
+  const [buyers, setBuyers] = useState<Buyer[]>(() => getBuyers());
   const [showForm, setShowForm] = useState(false);
   const [expandedId, setExpandedId] = useState<string | null>(null);
-  
-  useEffect(() => {
-    setBuyers(getBuyers());
-  }, []);
   
   const {
     register,

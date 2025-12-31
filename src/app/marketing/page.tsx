@@ -3,7 +3,7 @@ import { Card, CardTitle, CardDescription } from '@/components/ui/Card';
 import { Progress } from '@/components/ui/Progress';
 import { StatusBadge } from '@/components/ui/Badge';
 import { getMarketingChannels, getTargetMarkets, calculateMarketingProgress } from '@/lib/data';
-import { Globe, Share2, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 
